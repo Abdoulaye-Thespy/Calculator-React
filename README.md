@@ -9,8 +9,8 @@
 ## Built with
 
 - React
-- 
-- Boostrap
+- HTML
+- CSS
 
 ## Getting Started
 
