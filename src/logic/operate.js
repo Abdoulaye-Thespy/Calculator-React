@@ -1,4 +1,3 @@
-
 const Big = require('big.js');
 
 const operate = (numberOne, numberTwo, operation) => {
@@ -24,4 +23,4 @@ const operate = (numberOne, numberTwo, operation) => {
       return 0;
   }
 };
-export default operate
+export default operate;

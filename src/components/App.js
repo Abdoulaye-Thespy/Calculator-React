@@ -1,7 +1,9 @@
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../src/logic/calculate';
+/* eslint-disable */
+import calculate from '../logic/calculate';
+ /* eslint-enable */
 
 const App = function app() {
   return (
