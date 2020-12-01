@@ -1,22 +1,17 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends React.Component {
-constructor(props) {
-    super(props);
-  }
-    render() {
-
-return (
-  <div id="challenge-node"> 
-   <h1>{this.props.name}</h1>
+const Button = ({ name }) => (
+  <div>
+    <h1>{name}</h1>
   </div>
-)
-
-
-  }
+);
+Button.defaultProps = {
+  name: 'C',
 };
-
 
 Button.propTypes = {
-  result: PropTypes.string
+  name: PropTypes.string,
 };
+
+export default Button;

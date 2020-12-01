@@ -1,8 +1,14 @@
-const App = function() {
-return (
-    <React.Fragment>
+import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
+
+const App = function app() {
+  return (
+    <>
       <Display />
       <ButtonPanel />
-    </React.Fragment>
-)
-}
+    </>
+  );
+};
+
+export default App;
