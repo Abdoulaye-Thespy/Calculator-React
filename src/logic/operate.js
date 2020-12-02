@@ -13,6 +13,8 @@ const operate = (numberOne, numberTwo, operation) => {
       return one.minus(two).toString();
     case 'x':
       return one.times(two).toString();
+    case '%':
+      return one.div(100).toString();
     case '÷':
       try {
         return one.div(two).toString();
