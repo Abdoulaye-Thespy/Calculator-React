@@ -5,6 +5,8 @@ import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
  /* eslint-enable */
 
+ import PropTypes from 'prop-types';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -29,11 +31,15 @@ class App extends React.Component {
     const { total } = this.state;
     return (
       <>
-        <Display next={total} />
-        <ButtonPanel onClick={this.handleClick} />
+        <Display total={total} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
 }
+
+App.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default App;
