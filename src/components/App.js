@@ -5,13 +5,35 @@ import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
  /* eslint-enable */
 
-const App = function app() {
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
-  );
-};
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleClick(ButtonName) {
+    const result = calculate(this.state, ButtonName);
+    const { totals, nexts, operations } = result;
+    this.setState({
+      total: totals,
+      next: nexts,
+      operation: operations,
+    });
+  }
+
+  render() {
+    const { total } = this.state;
+    return (
+      <>
+        <Display next={total} />
+        <ButtonPanel onClick={this.handleClick} />
+      </>
+    );
+  }
+}
 
 export default App;
