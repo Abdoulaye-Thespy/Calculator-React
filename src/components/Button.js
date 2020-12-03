@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 
 const Button = ({ name }) => (
   <div>
-    <h1>{name}</h1>
+    <h1>
+      {name}
+    </h1>
   </div>
+
 );
+
 Button.defaultProps = {
   name: 'C',
 };
