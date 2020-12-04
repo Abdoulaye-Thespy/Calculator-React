@@ -22,6 +22,7 @@ class App extends React.Component {
       next: nexts,
       operation: operations,
     });
+    console.log('hello');
   }
 
   render() {

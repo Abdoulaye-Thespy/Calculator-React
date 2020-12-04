@@ -6,7 +6,7 @@ import './ButtonPanel.css';
 
 import Button from './Button';
 
-const ButtonPanel = clickHandler => (
+const ButtonPanel = ({clickHandler}) => (
   <>
     <div className="line1">
       <Button name="AC" clickHandle={clickHandler} />
