@@ -2,11 +2,11 @@ import React from 'react';
 
 import './ButtonPanel.css';
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import Button from './Button';
 
-const ButtonPanel = ({clickHandler}) => (
+const ButtonPanel = ({ clickHandler }) => (
   <>
     <div className="line1">
       <Button name="AC" clickHandle={clickHandler} />
@@ -15,7 +15,7 @@ const ButtonPanel = ({clickHandler}) => (
       <Button name="÷" clickHandle={clickHandler} />
     </div>
     <div className="line1">
-      <Button name="7" clickHandler={clickHandler} />
+      <Button name="7" clickHandle={clickHandler} />
       <Button name="8" clickHandle={clickHandler} />
       <Button name="9" clickHandle={clickHandler} />
       <Button name="X" clickHandle={clickHandler} />
@@ -36,12 +36,11 @@ const ButtonPanel = ({clickHandler}) => (
       <Button name="5" clickHandle={clickHandler} />
       <Button name="." clickHandle={clickHandler} />
       <Button name="=" clickHandle={clickHandler} />
-      <Button name="" clickHandle={clickHandler} />
     </div>
   </>
 );
 
-// ButtonPanel.propTypes = {
-//   clickHandler: PropTypes.func.isRequired,
-// };
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 export default ButtonPanel;

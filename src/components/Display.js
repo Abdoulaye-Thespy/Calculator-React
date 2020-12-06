@@ -10,5 +10,7 @@ const Display = ({ total }) => (
 Display.propTypes = {
   total: PropTypes.string,
 };
-
+Display.defaultProps = {
+  total: '0',
+};
 export default Display;
