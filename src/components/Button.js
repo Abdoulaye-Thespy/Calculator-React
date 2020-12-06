@@ -1,17 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name }) => (
-  <div>
-    <h1>{name}</h1>
-  </div>
+const Button = ({ name, clickHandle }) => (
+  <button
+    type="button"
+    onClick={() => {
+				clickHandle(name); // eslint-disable-line
+    }}
+  >
+    {name}
+  </button>
+
 );
+
 Button.defaultProps = {
   name: 'C',
 };
 
 Button.propTypes = {
   name: PropTypes.string,
+  clickHandle: PropTypes.func.isRequired,
 };
 
 export default Button;
