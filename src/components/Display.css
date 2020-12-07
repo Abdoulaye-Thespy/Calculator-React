@@ -1,0 +1,14 @@
+.display {
+  display: flex;
+  align-items: center;
+  background-color: #5c5c8a;
+  width: 700px;
+  height: 100px;
+  justify-content: flex-end;
+}
+
+.result {
+  color: #fff;
+  font-weight: 2;
+  padding-right: 20px;
+}

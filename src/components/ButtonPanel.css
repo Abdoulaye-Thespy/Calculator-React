@@ -1,3 +1,14 @@
 .line1 {
   display: flex;
+  width: 700px;
+  height: 100px;
+}
+
+.btn {
+  width: 175px;
+  font-size: 30px;
+}
+
+.zero {
+	width: 50%;
 }

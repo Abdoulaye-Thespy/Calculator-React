@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ name, clickHandle }) => (
   <button
+    className="btn"
     type="button"
     onClick={() => {
 				clickHandle(name); // eslint-disable-line
