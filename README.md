@@ -37,7 +37,7 @@ npm install
 ```
  in the directory that you download the source.
 
-- run 
+- run the following command to start the server
 ```
 npm start
 ```
