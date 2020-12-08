@@ -13,3 +13,8 @@
 .zero {
   width: 50%;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
