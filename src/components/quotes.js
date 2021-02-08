@@ -3,7 +3,6 @@ import Navbar from './nvbar';
 function Quote() {
   return (
     <>
-      <Navbar />
       <div>
         <h1> Welcome to our Page</h1>
         <p> Mathematics is not about numbers, equations, computations, </p>
