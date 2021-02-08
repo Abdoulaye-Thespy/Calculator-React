@@ -1,6 +1,5 @@
 import React from 'react';
 import render from 'react-test-renderer';
-import { Link } from 'react-router-dom';
 import Calculator from '../../components/Calculator';
 import Button from '../../components/Button';
 

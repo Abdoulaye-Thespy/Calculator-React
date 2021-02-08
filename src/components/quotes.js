@@ -1,5 +1,3 @@
-import Navbar from './nvbar';
-
 function Quote() {
   return (
     <>
