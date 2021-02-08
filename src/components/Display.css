@@ -19,6 +19,7 @@
 }
 
 .el {
- font-size: 25px;
+ font-size: 45px;
  padding-top: 40px; 
+ border-right: 3px solid black;
 }
