@@ -11,17 +11,44 @@
 - React
 - HTML
 - CSS
+- Javascript
 
 ## Getting Started
 
 - Clone the git repository.
 - cd into the project
+## Setup
+
+-To use this app locally, 
+
+Clone this repo:
+
+- Clone with HTTPS:
+```
+https://github.com/Abdoulaye-Thespy/Calculator-React.git
+```
+- Clone with SHH:
+```
+https://github.com/Abdoulaye-Thespy/Calculator-React.git
+```
+- run 
+``` 
+npm install
+```
+ in the directory that you download the source.
+
+- run the following command to start the server
+```
+npm start
+```
 
 ## Author
 
 Abdoulaye Njigouh
 
 - Github: [@Abdoulaye](https://github.com/Abdoulaye-Thespy)
+- Linkedin [@njigouh-abdoulaye-razak](https://www.linkedin.com/in/njigouh-abdoulaye-razak/)
+- Github [@Abdoulaye-Thespy](https://github.com/Abdoulaye-Thespy)
 
 
 ## Show your support

@@ -2,6 +2,7 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
+import Navbar from './nvbar';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,13 +23,20 @@ class App extends React.Component {
     /* eslint-disable */ 
     const { total, next, operation } = this.state;
     const result = next || total || '0';
- /* eslint-enable */
+        /* eslint-enable */
     return (
       <div>
 
         <>
-          <Display total={result.toString()} />
-          <ButtonPanel clickHandler={this.handleClick} />
+          <Navbar />
+          <div className="seperate">
+
+            <h1> LET S DO SOME MATH</h1>
+            <div>
+              <Display total={result.toString()} />
+              <ButtonPanel clickHandler={this.handleClick} />
+            </div>
+          </div>
         </>
       </div>
     );

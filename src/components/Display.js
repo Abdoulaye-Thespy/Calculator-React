@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Display.css';
 
 const Display = ({ total }) => (
-  <div>
-    <h1>{total}</h1>
+  <div className="display">
+    <h1 className="result">{total}</h1>
   </div>
 );
 
