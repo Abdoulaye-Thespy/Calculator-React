@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should render without crashing 1`] = `
+<div>
+  <h1>
+     Welcome to our Page
+  </h1>
+  <p>
+     Mathematics is not about numbers, equations, computations, 
+  </p>
+  <p>
+    or algorithms: it is about understanding. –William Paul Thurston
+  </p>
+</div>
+`;

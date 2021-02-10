@@ -1,38 +1,27 @@
 import React from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
+import {
+  Route, BrowserRouter as Router, Switch, Link,
+} from 'react-router-dom';
+import Calculator from './Calculator';
+import Home from './home';
+import Quote from './quotes';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(ButtonName) {
-    this.setState(data => calculate(data, ButtonName));
-  }
-
-  render() {
-    /* eslint-disable */ 
-    const { total, next, operation } = this.state;
-    const result = next || total || '0';
- /* eslint-enable */
-    return (
-      <div>
-
-        <>
-          <Display total={result.toString()} />
-          <ButtonPanel clickHandler={this.handleClick} />
-        </>
+export default function App() {
+  return (
+    <Router>
+      <div className="nav">
+        <h1> MATH MAGICIANS</h1>
+        <div>
+          <Link to="/" className="el">Home </Link>
+          <Link to="/quote" className="el">Quotes </Link>
+          <Link to="/calculator" className="el">Calculator </Link>
+        </div>
       </div>
-    );
-  }
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/quote" component={Quote} />
+        <Route exact path="/calculator" component={Calculator} />
+      </Switch>
+    </Router>
+  );
 }
-
-export default App;
