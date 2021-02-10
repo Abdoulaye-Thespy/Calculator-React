@@ -1,7 +1,7 @@
 import React from 'react';
 import render from 'react-test-renderer';
-import Calculator from '../../components/Calculator';
-import Button from '../../components/Button';
+import Calculator from '../components/Calculator';
+import Button from '../components/Button';
 
 describe('Calculator', () => {
   const page = render.create(<Calculator />);

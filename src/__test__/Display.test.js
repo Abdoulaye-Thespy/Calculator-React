@@ -1,9 +1,9 @@
 import React from 'react';
 import render from 'react-test-renderer';
-import Home from '../../components/home';
+import Display from '../components/Display';
 
-describe('Home', () => {
-  const page = render.create(<Home />).toJSON();
+describe('Display', () => {
+  const page = render.create(<Display />);
   test('should render without crashing', () => {
     expect(page).toMatchSnapshot();
   });
